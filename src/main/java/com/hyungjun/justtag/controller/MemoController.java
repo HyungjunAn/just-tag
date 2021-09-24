@@ -4,6 +4,7 @@ import com.hyungjun.justtag.domain.Memo;
 import com.hyungjun.justtag.service.MemoService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.ArrayList;
@@ -18,14 +19,17 @@ public class MemoController {
     }
 
     @RequestMapping("memos/new")
-    @ResponseBody
-    public int insertMemo() {
+    public String insertMemo(
+            @RequestParam(value = "title") String title,
+            @RequestParam(value = "content") String content) {
         Memo memo = new Memo();
 
-        memo.title = "this is title!";
-        memo.content = "this is content";
+        memo.title = title;
+        memo.content = content;
 
-        return memoService.insert(memo);
+        memoService.insert(memo);
+
+        return "redirect:/";
     }
 
     @RequestMapping("memos/")

@@ -5,8 +5,30 @@
   <div>
     <h1>Just Tag</h1>
     <p>
-      <a href="/memos/new">추가</a>
-      <a href="/memos/">목록</a>
+    <form action="/memos/new" method="POST">
+      <p>
+        Title :
+        <input type="text" name="title"/>
+      </p>
+      <p>
+        Content :
+        <input type="text" name="content"/>
+      </p>
+      <input type="submit" value="Add Memo"/>
+    </form>
+    </p>
+    <p>
+    <form action="/memos/newTag" method="POST">
+      <p>
+        New Tag :
+        <input type="text" name="tag"/>
+      </p>
+      <input type="submit" value="Add Tag"/>
+    </form>
+    </p>
+
+    <p>
+    <a href="/memos/">All Memos</a>
     </p>
   </div>
 </div> <!-- /container -->
