@@ -1,7 +1,7 @@
-package com.hyungjun.justtag.controller;
+package com.hyungjun.typie.controller;
 
-import com.hyungjun.justtag.domain.Memo;
-import com.hyungjun.justtag.service.MemoService;
+import com.hyungjun.typie.domain.Memo;
+import com.hyungjun.typie.service.MemoService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;

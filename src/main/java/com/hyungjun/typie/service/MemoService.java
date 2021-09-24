@@ -1,8 +1,8 @@
-package com.hyungjun.justtag.service;
+package com.hyungjun.typie.service;
 
-import com.hyungjun.justtag.domain.Memo;
-import com.hyungjun.justtag.repository.MemoRepository;
-import com.hyungjun.justtag.repository.MemoryMemoRepository;
+import com.hyungjun.typie.domain.Memo;
+import com.hyungjun.typie.repository.MemoRepository;
+import com.hyungjun.typie.repository.MemoryMemoRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;

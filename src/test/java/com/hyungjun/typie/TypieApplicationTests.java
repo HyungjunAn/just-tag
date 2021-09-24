@@ -1,10 +1,10 @@
-package com.hyungjun.justtag;
+package com.hyungjun.typie;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class JustTagApplicationTests {
+class TypieApplicationTests {
 
 	@Test
 	void contextLoads() {

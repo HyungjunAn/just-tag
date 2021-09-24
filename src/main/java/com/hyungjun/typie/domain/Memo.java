@@ -1,4 +1,4 @@
-package com.hyungjun.justtag.domain;
+package com.hyungjun.typie.domain;
 
 import java.util.ArrayList;
 

@@ -1,13 +1,13 @@
-package com.hyungjun.justtag;
+package com.hyungjun.typie;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class JustTagApplication {
+public class TypieApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(JustTagApplication.class, args);
+		SpringApplication.run(TypieApplication.class, args);
 	}
 
 }

@@ -1,3 +1,3 @@
-# Just Tag
-Brand new memo service using tag
+# TYPIE
+Brand new blog service using tag and markdown
 

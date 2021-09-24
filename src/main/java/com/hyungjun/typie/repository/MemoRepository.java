@@ -1,6 +1,6 @@
-package com.hyungjun.justtag.repository;
+package com.hyungjun.typie.repository;
 
-import com.hyungjun.justtag.domain.Memo;
+import com.hyungjun.typie.domain.Memo;
 
 import java.util.ArrayList;
 
