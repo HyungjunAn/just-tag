@@ -3,34 +3,45 @@
 <body>
 <div class="container">
   <div>
-    <h1>Just Tag</h1>
+    <h1>TYPIE</h1>
     <p>
-    <form action="/memos/new" method="POST">
-      <p>
-        Title :
-        <input type="text" name="title"/>
-      </p>
-      <p>
-        Content :
-        <input type="text" name="content"/>
-      </p>
-      <input type="submit" value="Add Memo"/>
+    <form action="/posts/new" method="POST">
+      <p><input type="text" name="title" placeholder="Title"/></p>
+      <p><input type="text" name="content" placeholder="Content"/></p>
+      <p><input type="submit" value="Add Post"/></p>
     </form>
     </p>
     <p>
-    <form action="/memos/newTag" method="POST">
-      <p>
-        New Tag :
-        <input type="text" name="tag"/>
-      </p>
-      <input type="submit" value="Add Tag"/>
+    <form action="/posts/newTag" method="POST">
+      <p><input type="text" name="tag" placeholder="tag"/></p>
+      <p><input type="submit" value="Add Tag"/></p>
     </form>
     </p>
 
     <p>
-    <a href="/memos/">All Memos</a>
+      <a href="/posts/">All Posts</a>
     </p>
   </div>
 </div> <!-- /container -->
+<script>
+  function sendPost(action, params) {
+    var form = document.createElement('form');
+
+    form.setAttribute('method', 'post');
+    form.setAttribute('action', action);
+    document.charset = "utf-8";
+
+    for ( var key in params) {
+      var hiddenField = document.createElement('input');
+      hiddenField.setAttribute('type', 'hidden');
+      hiddenField.setAttribute('name', key);
+      hiddenField.setAttribute('value', params[key]);
+      form.appendChild(hiddenField);
+    }
+
+    document.body.appendChild(form);
+    form.submit();
+  }
+</script>
 </body>
 </html>

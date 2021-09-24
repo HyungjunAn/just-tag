@@ -1,6 +1,6 @@
 package com.hyungjun.typie.controller;
 
-import com.hyungjun.typie.domain.Memo;
+import com.hyungjun.typie.domain.Post;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -16,14 +16,14 @@ public class HomeController {
 
     @RequestMapping(path = "/return/json")
     @ResponseBody
-    public Memo homeJson() {
-        Memo memo = new Memo();
+    public Post homeJson() {
+        Post post = new Post();
 
-        memo.title = "this is title";
-        memo.content = "blabla~";
-        memo.tags.add("tag1");
-        memo.tags.add("tag2");
+        post.title = "this is title";
+        post.content = "blabla~";
+        post.tags.add("tag1");
+        post.tags.add("tag2");
 
-        return memo;
+        return post;
     }
 }
